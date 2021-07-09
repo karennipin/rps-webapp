@@ -6,24 +6,24 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
-}
 
-//mpbile resolution
-@media only screen and (min-width: 375px) {
-  .header {
+  //mpbile resolution
+  @media only screen and (min-width: 375px) {
     width: 320px;
     padding: 20px 26px;
     margin-bottom: 45px;
+    div:first-child {
+      height: 11vh;
+      width: 20vw;
+    }
   }
-}
-//tablet resolution
-@media only screen and (min-width: 962px) {
-  .header {
+  //tablet resolution
+  @media only screen and (min-width: 962px) {
     margin-bottom: 50px;
-  }
-  .header div:first-child {
-    height: 14vh;
-    width: 14vw;
+    div:first-child {
+      height: 14vh;
+      width: 14vw;
+    }
   }
 }
 
@@ -61,6 +61,8 @@
   }
   .scoreText {
     font-size: 12px;
+    display: flex;
+    justify-content: center;
   }
   .count {
     font-size: 50px;
