@@ -1,0 +1,198 @@
+.firstStepContainer {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (min-width: 375px) {
+    width: 85%;
+  }
+  @media only screen and (min-width: 962px) {
+    width: 50%;
+  }
+
+  //desktop resolution
+  @media only screen and (min-width: 1024px) {
+    width: 50%;
+  }
+  @media only screen and (min-width: 1366px) {
+    width: 40%;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 35%;
+  }
+
+  @media only screen and (min-width: 962px) {
+  }
+  button {
+    border: none;
+    background: none;
+  }
+  .triangleContainer {
+    position: absolute;
+    z-index: 1;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .triangleContainer > div:first-child {
+    width: 24vw;
+  }
+
+  //mobile resolution
+  @media only screen and (min-width: 375px) {
+    .triangleContainer {
+      width: 80%;
+    }
+    .triangleContainer div:first-child {
+      width: 78vw;
+    }
+  }
+  //tablet resolution
+  @media only screen and (min-width: 962px) {
+    .triangleContainer {
+      width: 50%;
+    }
+    .triangleContainer div:first-child {
+      width: 40vw;
+    }
+  }
+
+  //desktop resolution
+  @media only screen and (min-width: 1024px) {
+    .triangleContainer {
+      width: 50%;
+    }
+    .triangleContainer div:first-child {
+      width: 42vw;
+    }
+  }
+
+  @media only screen and (min-width: 1366px) {
+    .triangleContainer {
+      width: 40%;
+    }
+    .triangleContainer div:first-child {
+      width: 31vw;
+    }
+  }
+
+  @media only screen and (min-width: 1920px) {
+    .triangleContainer {
+      width: 35%;
+    }
+    .triangleContainer div:first-child {
+      width: 23vw;
+    }
+  }
+  .paperAndScissorsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .rockContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .paperWrapper {
+    background: #5671f5;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 0px 0px #384ba7;
+  }
+
+  .scissorsWrapper {
+    background: #ec9e0e;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 0px 0px #9c721d;
+  }
+
+  .rockWrapper {
+    background: #dc2e4e;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 0px 0px #bb2742;
+  }
+
+  .paper,
+  .scissors,
+  .rock {
+    background: white;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  //mobile resolution
+  @media only screen and (max-width: 375px) {
+    .paperWrapper,
+    .scissorsWrapper,
+    .rockWrapper {
+      width: 125px;
+      height: 125px;
+    }
+    .paper,
+    .scissors,
+    .rock {
+      width: 90px;
+      height: 90px;
+    }
+
+    .paper div:first-child {
+      height: 8vh;
+      width: 12vw;
+    }
+    .scissors div:first-child {
+      height: 8vh;
+      width: 12vw;
+    }
+    .rock div:first-child {
+      height: 8vh;
+      width: 12vw;
+    }
+  }
+  //tablet resolution
+  @media only screen and (max-width: 962px) {
+    .paperWrapper,
+    .scissorsWrapper,
+    .rockWrapper {
+      width: 150px;
+      height: 150px;
+    }
+    .paper,
+    .scissors,
+    .rock {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .triangle {
+    position: absolute;
+  }
+}

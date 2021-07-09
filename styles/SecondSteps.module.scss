@@ -1,0 +1,104 @@
+.stepsContainer {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  button {
+    background: none;
+    border: none;
+  }
+}
+
+.userPickItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 250px;
+  span {
+    color: white;
+    margin-bottom: 20px;
+  }
+}
+
+.paperWrapper {
+  background: #5671f5;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 7px 0px 0px #384ba7;
+}
+
+.paper,
+.scissors,
+.rock {
+  background: white;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.rockWrapper {
+  background: #dc2e4e;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 7px 0px 0px #bb2742;
+}
+
+.scissorsWrapper {
+  background: #ec9e0e;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 7px 0px 0px #9c721d;
+}
+
+.emptyCircle {
+  background: #172240;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.winOrLoseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.winOrLoseText {
+  color: white;
+  font-size: 55px;
+}
+
+.buttonPlayAgain {
+  background: white;
+  color: #dc2e4e;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.hideWinOrLoseContainer {
+  display: none;
+}
+
+.stepsContainers {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
