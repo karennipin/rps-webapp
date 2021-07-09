@@ -1,27 +1,28 @@
+@import "mixins";
+
 .firstStepContainer {
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  @media only screen and (min-width: 360px) {
+  @include for-size(phone-only) {
     width: 85%;
   }
-  @media only screen and (min-width: 962px) {
+
+  // tablet
+  @include for-size(tablet-landscape-up) {
     width: 50%;
   }
 
   //desktop resolution
-  @media only screen and (min-width: 1024px) {
+  @include for-size(desktop-up) {
     width: 50%;
   }
-  @media only screen and (min-width: 1366px) {
-    width: 40%;
-  }
 
-  @media only screen and (min-width: 1920px) {
-    width: 30%;
-  }
+  // @media only screen and (min-width: 1920px) {
+  //   width: 30%;
+  // }
 
   button {
     border: none;
@@ -30,62 +31,33 @@
   .triangleContainer {
     position: absolute;
     z-index: 1;
-    width: 33%;
     display: flex;
     justify-content: center;
+    width: 33%;
+    @include for-size(phone-only) {
+      width: 80%;
+    }
+    @include for-size(tablet-landscape-up) {
+      width: 50%;
+    }
+    @include for-size(desktop-up) {
+      width: 50%;
+    }
   }
 
   .triangleContainer > div:first-child {
     width: 24vw;
-  }
-
-  //mobile resolution
-  @media only screen and (min-width: 360px) {
-    .triangleContainer {
-      width: 80%;
-    }
-    .triangleContainer div:first-child {
+    @include for-size(phone-only) {
       width: 78vw;
     }
-  }
-
-  //tablet resolution
-  @media only screen and (min-width: 962px) {
-    .triangleContainer {
-      width: 50%;
-    }
-    .triangleContainer div:first-child {
+    @include for-size(tablet-landscape-up) {
       width: 40vw;
     }
-  }
-
-  //desktop resolution
-  @media only screen and (min-width: 1024px) {
-    .triangleContainer {
-      width: 50%;
-    }
-    .triangleContainer div:first-child {
-      width: 42vw;
-    }
-  }
-
-  @media only screen and (min-width: 1366px) {
-    .triangleContainer {
-      width: 40%;
-    }
-    .triangleContainer div:first-child {
+    @include for-size(desktop-up) {
       width: 31vw;
     }
   }
 
-  @media only screen and (min-width: 1920px) {
-    .triangleContainer {
-      width: 30%;
-    }
-    .triangleContainer div:first-child {
-      width: 23vw;
-    }
-  }
   .paperAndScissorsContainer {
     display: flex;
     justify-content: space-between;
@@ -148,7 +120,7 @@
   }
 
   //mobile resolution
-  @media only screen and (max-width: 360px) {
+  @include for-size(phone-only) {
     .paperWrapper,
     .scissorsWrapper,
     .rockWrapper {
@@ -176,50 +148,31 @@
     }
   }
 
-  @media only screen and (max-width: 375px) {
-    .paperWrapper,
-    .scissorsWrapper,
-    .rockWrapper {
-      width: 125px;
-      height: 125px;
-    }
-    .paper,
-    .scissors,
-    .rock {
-      width: 90px;
-      height: 90px;
-    }
-
-    .paper div:first-child {
-      height: 8vh;
-      width: 12vw;
-    }
-    .scissors div:first-child {
-      height: 8vh;
-      width: 12vw;
-    }
-    .rock div:first-child {
-      height: 8vh;
-      width: 12vw;
-    }
-  }
   //tablet resolution
-  @media only screen and (min-width: 962px) {
-    .paperWrapper,
-    .scissorsWrapper,
-    .rockWrapper {
-      width: 150px;
-      height: 150px;
-    }
-    .paper,
-    .scissors,
-    .rock {
-      width: 100px;
-      height: 100px;
-    }
-  }
+
+  // @include for-size(tablet-landscape-up) {
+  //   .triangleContainer {
+  //     // width: 50%;
+  //   }
+  //   .triangleContainer div:first-child {
+  //     width: 40vw;
+  //   }
+  //   .paperWrapper,
+  //   .scissorsWrapper,
+  //   .rockWrapper {
+  //     width: 150px;
+  //     height: 150px;
+  //   }
+  //   .paper,
+  //   .scissors,
+  //   .rock {
+  //     width: 100px;
+  //     height: 100px;
+  //   }
+  // }
 
   //desktop
+
   @media only screen and (min-width: 1920px) {
     .paperWrapper,
     .scissorsWrapper,
