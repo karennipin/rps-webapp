@@ -177,7 +177,7 @@
     }
   }
   //tablet resolution
-  @media only screen and (max-width: 962px) {
+  @media only screen and (min-width: 962px) {
     .paperWrapper,
     .scissorsWrapper,
     .rockWrapper {
