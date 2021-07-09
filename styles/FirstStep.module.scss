@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @media only screen and (min-width: 375px) {
+  @media only screen and (min-width: 360px) {
     width: 85%;
   }
   @media only screen and (min-width: 962px) {
@@ -40,7 +40,7 @@
   }
 
   //mobile resolution
-  @media only screen and (min-width: 375px) {
+  @media only screen and (min-width: 360px) {
     .triangleContainer {
       width: 80%;
     }
@@ -48,6 +48,7 @@
       width: 78vw;
     }
   }
+
   //tablet resolution
   @media only screen and (min-width: 962px) {
     .triangleContainer {
@@ -147,6 +148,34 @@
   }
 
   //mobile resolution
+  @media only screen and (max-width: 360px) {
+    .paperWrapper,
+    .scissorsWrapper,
+    .rockWrapper {
+      width: 125px;
+      height: 125px;
+    }
+    .paper,
+    .scissors,
+    .rock {
+      width: 90px;
+      height: 90px;
+    }
+
+    .paper div:first-child {
+      height: 8vh;
+      width: 12vw;
+    }
+    .scissors div:first-child {
+      height: 8vh;
+      width: 12vw;
+    }
+    .rock div:first-child {
+      height: 8vh;
+      width: 12vw;
+    }
+  }
+
   @media only screen and (max-width: 375px) {
     .paperWrapper,
     .scissorsWrapper,
