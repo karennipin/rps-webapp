@@ -1,4 +1,4 @@
-import styles from "../styles/Header.module.scss";
+import styles from "../styles/components/Header.module.scss";
 import Image from "next/image";
 
 const Header = (props) => {

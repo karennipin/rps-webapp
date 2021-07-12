@@ -1,4 +1,4 @@
-@import "mixins";
+@import "../mixins";
 
 .firstStepContainer {
   width: 33%;
@@ -7,22 +7,16 @@
   justify-content: center;
 
   @include for-size(phone-only) {
-    width: 85%;
+    width: 80%;
   }
 
-  // tablet
   @include for-size(tablet-landscape-up) {
     width: 50%;
   }
 
-  //desktop resolution
   @include for-size(desktop-up) {
     width: 50%;
   }
-
-  // @media only screen and (min-width: 1920px) {
-  //   width: 30%;
-  // }
 
   button {
     border: none;
@@ -48,7 +42,7 @@
   .triangleContainer > div:first-child {
     width: 24vw;
     @include for-size(phone-only) {
-      width: 78vw;
+      width: 75%;
     }
     @include for-size(tablet-landscape-up) {
       width: 40vw;
@@ -136,42 +130,17 @@
 
     .paper div:first-child {
       height: 8vh;
-      width: 12vw;
+      width: 10vw;
     }
     .scissors div:first-child {
       height: 8vh;
-      width: 12vw;
+      width: 10vw;
     }
     .rock div:first-child {
       height: 8vh;
-      width: 12vw;
+      width: 10vw;
     }
   }
-
-  //tablet resolution
-
-  // @include for-size(tablet-landscape-up) {
-  //   .triangleContainer {
-  //     // width: 50%;
-  //   }
-  //   .triangleContainer div:first-child {
-  //     width: 40vw;
-  //   }
-  //   .paperWrapper,
-  //   .scissorsWrapper,
-  //   .rockWrapper {
-  //     width: 150px;
-  //     height: 150px;
-  //   }
-  //   .paper,
-  //   .scissors,
-  //   .rock {
-  //     width: 100px;
-  //     height: 100px;
-  //   }
-  // }
-
-  //desktop
 
   @media only screen and (min-width: 1920px) {
     .paperWrapper,

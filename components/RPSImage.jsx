@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/SecondSteps.module.scss";
+import styles from "../styles/components/SecondSteps.module.scss";
 
 const ROCK_ID = 3;
 const SCISSORS_ID = 2;

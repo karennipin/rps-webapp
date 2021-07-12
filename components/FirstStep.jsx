@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/FirstStep.module.scss";
+import styles from "../styles/components/FirstStep.module.scss";
 const FirstStep = (props) => {
   return (
     <div className={styles.firstStepContainer}>
